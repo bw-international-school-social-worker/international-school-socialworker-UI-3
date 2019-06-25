@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', sans-serif;
 }
 h1,
 h2,
@@ -165,6 +165,10 @@ a {
   padding-left: 50px;
   padding-right: 50px;
 }
+.container a:hover {
+  background: lightblue;
+  font-style: bold;
+}
 .container .navigation {
   display: grid;
   grid-template-columns: 15px repeat(6, 1fr) 15px;
@@ -192,7 +196,7 @@ a {
   .container .navigation .nav-items {
     padding-top: 1.5rem;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 .container .navigation .nav-items .nav-item {
@@ -202,6 +206,11 @@ a {
   padding-top: 0.7rem;
 }
 @media (max-width: 700px) {
+  .container .navigation .nav-items .nav-item {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
   .container .navigation .nav-items .nav-item {
     font-size: 1.2rem;
   }
@@ -263,13 +272,88 @@ a {
   }
 }
 .container .bottom-content {
-  background: green;
+  display: grid;
+  grid-template-columns: 15px repeat(2, 1fr) 15px;
+  grid-template-rows: auto;
+  padding-bottom: 4rem;
+  grid-column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid darkgray;
 }
-.container .footer {
-  background: blue;
+@media (max-width: 700px) {
+  .container .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .bottom-content .bottom-title {
+  padding: 3rem 0 2rem 0;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .container .bottom-content .bottom-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .container .bottom-content .bottom-title {
+    font-size: 2.4rem;
+  }
+}
+.container .bottom-content .bottom-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+.container .bottom-content .bottom-button {
+  background: #141464;
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+}
+.container .bottom-content .bottom-left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .container .bottom-content .bottom-left {
+    padding-bottom: 2rem;
+  }
+}
+.container .bottom-content .bottom-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  height: 10rem;
+  background: #141464;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 0.7rem;
 }
 .middle-content {
   margin-top: 4rem;
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 2.5rem;
 }
 .middle-content .mid-title {
   text-align: center;
@@ -295,15 +379,40 @@ a {
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
 }
+@media (max-width: 400px) {
+  .middle-content .article {
+    margin: 10px 0;
+    padding: 0 5px 5px;
+  }
+}
 .middle-content .article h2 {
-  margin: 2rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
   text-align: center;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 400px) {
+  .middle-content .article h2 {
+    font-size: 1.7rem;
+    margin-top: 1.2rem;
+  }
+}
+.middle-content .article .clicker {
+  text-align: center;
+  font-size: 1.2rem;
+  color: darkblue;
+  padding-bottom: 1rem;
 }
 .middle-content .article .article-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 7px;
+}
+@media (max-width: 400px) {
+  .middle-content .article .article-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .middle-content .article .article-content img {
   width: 100%;
@@ -311,10 +420,22 @@ a {
   object-fit: fill;
   grid-column-start: 1;
   grid-column-end: 2;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .middle-content .article .article-content p {
   grid-column-start: 2;
   grid-column-end: 3;
   padding: 0 1rem;
+}
+@media (max-width: 700px) {
+  .middle-content .article .article-content p {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400px) {
+  .middle-content .article .article-content p {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
 }

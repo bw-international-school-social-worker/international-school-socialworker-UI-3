@@ -3,6 +3,11 @@
     margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
+
+    a:hover {
+        background: lightblue;
+        font-style: bold;
+    }
     
     .navigation {
         display: grid;
@@ -31,7 +36,7 @@
             @media(max-width: 700px){
                 padding-top: 1.5rem;
                 width: 100%;
-                justify-content: space-evenly;
+                justify-content: space-between;
             }
 
             .nav-item {
@@ -41,10 +46,19 @@
                padding-top: 0.7rem;
 
                @media(max-width: 700px){
-                   font-size: 1.2rem;
+                font-size: 1.5rem;
+                }
+
+                @media(max-width: 400px){
+                    font-size: 1.2rem;
+                   }
+
+               
                }
             }
-        }
+               
+            
+        
     }
 
     .header {
@@ -96,10 +110,83 @@
     }
 
     .bottom-content {
-        background: green;
+        display: grid;
+        grid-template-columns: 15px repeat(2, 1fr) 15px;
+        grid-template-rows: auto;
+        padding-bottom: 4rem;
+        grid-column-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid darkgray;
+
+        @media(max-width: 700px){
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom-title {
+            padding: 3rem 0 2rem 0;
+            grid-column-start: 1;
+            grid-column-end: -1;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bold;
+
+            @media(max-width: 700px){font-size: 3rem}
+            @media(max-width: 700px){font-size: 2.4rem}
+        }
+
+        .bottom-img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 1rem;
+        }
+
+        .bottom-button {
+            background: rgb(20, 20, 100);
+            color: white;
+            width: 50%;
+            text-align: center;
+            padding: 1.2rem;
+            margin-top: 1.5rem;
+            border-radius: 1rem;
+            font-size: 1.3rem;
+        }
+
+
+        .bottom-left {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media(max-width: 700px){
+                padding-bottom: 2rem;
+            }
+
+        }
+
+        .bottom-right {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    .footer {
-        background: blue;
-    }
+}
+
+.footer {
+    height: 10rem;
+    background: rgb(20, 20, 100);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 0.7rem;
+
 }
