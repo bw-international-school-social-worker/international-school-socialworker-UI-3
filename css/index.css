@@ -245,7 +245,7 @@ a {
 }
 @media (max-width: 700px) {
   .container .header .header-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 700px) {
@@ -330,7 +330,7 @@ a {
 }
 @media (max-width: 700px) {
   .container .bottom-content .bottom-left {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 }
 .container .bottom-content .bottom-right {
@@ -352,37 +352,43 @@ a {
 }
 .middle-content {
   margin-top: 4rem;
+  font-weight: bold;
   border-bottom: 1px solid darkgray;
   padding-bottom: 2.5rem;
 }
 .middle-content .mid-title {
   text-align: center;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 700px) {
   .middle-content .mid-title {
-    font-size: 2rem;
+    font-size: 2.7rem;
+    line-height: 1.7;
   }
 }
 @media (max-width: 400px) {
   .middle-content .mid-title {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
+    line-height: 1.2;
   }
 }
 .middle-content .article {
   margin: 20px 5%;
   padding: 0 20px 20px;
   border: 1px solid lightgrey;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background-color: white;
   position: relative;
-  height: 35rem;
+  height: 7.5rem;
   overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
+  box-shadow: 1px 1px 1px lightgrey;
 }
 @media (max-width: 400px) {
   .middle-content .article {
     margin: 10px 0;
     padding: 0 5px 5px;
+    height: 6rem;
   }
 }
 .middle-content .article h2 {
@@ -394,7 +400,7 @@ a {
 @media (max-width: 400px) {
   .middle-content .article h2 {
     font-size: 1.7rem;
-    margin-top: 1.2rem;
+    margin-top: 1.1rem;
   }
 }
 .middle-content .article .clicker {
@@ -426,6 +432,7 @@ a {
   grid-column-start: 2;
   grid-column-end: 3;
   padding: 0 1rem;
+  font-size: 1.9rem;
 }
 @media (max-width: 700px) {
   .middle-content .article .article-content p {
@@ -438,4 +445,7 @@ a {
     padding-top: 1rem;
     font-size: 1rem;
   }
+}
+.middle-content .article-open {
+  height: 35rem;
 }
