@@ -310,6 +310,7 @@ a {
   height: auto;
   object-fit: contain;
   border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container .bottom-content .bottom-button {
   background: #141464;
@@ -378,7 +379,7 @@ a {
   padding: 0 20px 20px;
   border: 1px solid lightgrey;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: #7A7A7A;
   position: relative;
   height: 7.5rem;
   overflow: hidden;
@@ -396,6 +397,7 @@ a {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 0.5rem;
+  color: white;
 }
 @media (max-width: 400px) {
   .middle-content .article h2 {
@@ -406,7 +408,7 @@ a {
 .middle-content .article .clicker {
   text-align: center;
   font-size: 1.2rem;
-  color: darkblue;
+  color: lightgray;
   padding-bottom: 1rem;
 }
 .middle-content .article .article-content {
@@ -427,12 +429,15 @@ a {
   grid-column-start: 1;
   grid-column-end: 2;
   border-radius: 2px;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .middle-content .article .article-content p {
   grid-column-start: 2;
   grid-column-end: 3;
   padding: 0 1rem;
   font-size: 1.9rem;
+  color: lightgray;
 }
 @media (max-width: 700px) {
   .middle-content .article .article-content p {
