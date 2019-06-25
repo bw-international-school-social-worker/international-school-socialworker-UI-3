@@ -15,7 +15,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-right: 20px;
+            padding-right: 2rem;
 
             h2 {
                 font-size: 4rem;
@@ -41,7 +41,7 @@
                width: 100%;
                height: 100%;
                object-fit: contain;
-               border-radius: 20px !important;
+               border-radius: 2rem !important;
             }
         }
     }
@@ -75,17 +75,69 @@
 
     .wrapper-about {
         display: grid;
-        padding-top: 20px;
+        margin: 40px 15px 0 15px;
         height: 500px;
+        background: silver;
 
         .about-bar {
             display: grid;
-            grid-template-columns: 1fr 4fr ;
-            grid-template-rows: 70px;
+            grid-template-columns: 1.5rem repeat(5, 1fr) 1.5rem;
+            height: 5rem;
+            align-items: center;
+            background: darkblue;
+            border-radius: 5px;
+
+            .about-title {
+                grid-column-start: 2;
+                color: white;
+                
+            }
+
+            .lower-nav-items {
+                grid-column: 3 / span 4;
+                display: flex;
+                justify-content: space-around;
+
+                .l-nav-item {
+                    text-decoration: underline;
+                    align-items: center;
+                    font-size: 1.6rem;
+                    border-left: 1px solid black;
+                    padding-left: auto;
+                    color: white;
+                }
+            }
         }
 
-        .lower-nav-items {
-            display: flex;
+        
+    }
+
+    .wrapper-bottom {
+        padding: 40px 15px 0 15px;
+
+        .bottom-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 4fr 1fr;
+            grid-column-gap: 2%;
+
+            .b-left {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                margin: 0 auto;
+            }
+
+            .b-right {
+                grid-column-start: 2;
+                margin: 0 auto;
+
+            }
+
+            .donate {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                padding: none;
+            }
         }
     }
 
