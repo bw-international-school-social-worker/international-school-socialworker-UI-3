@@ -1,0 +1,103 @@
+.middle-content{
+    margin-top: 4rem;
+    font-weight: bold;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 2.5rem;
+
+    .mid-title {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        @media(max-width: 700px){
+            font-size: 2.7rem;
+            line-height: 1.7;
+        }
+        @media(max-width: 400px){
+            font-size: 2.3rem;
+            line-height: 1.2;
+        }
+    }
+
+    .article {
+        margin: 20px 5%;
+        padding: 0 20px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 0.5rem;
+        background-color: white;
+        position: relative;
+        height: 7.5rem;  // collapsed height should be around 7.5rem
+        overflow: hidden;
+        box-shadow: 1px 1px 1px lightgrey;
+
+        @media(max-width: 400px){
+            margin: 10px 0;
+            padding: 0 5px 5px;
+            height: 6rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+
+
+            @media(max-width: 400px){
+                font-size: 1.7rem;
+                margin-top: 1.1rem;
+            }
+
+            
+        }
+
+        .clicker {
+            text-align: center;
+            font-size: 1.2rem;
+            color: darkblue;
+            padding-bottom: 1rem;
+        }
+
+        .article-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 7px;
+
+            @media(max-width: 400px){
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: fill;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                border-radius: 2px;
+            }
+
+            p {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                padding: 0 1rem;
+                font-size: 1.9rem;
+
+                @media(max-width: 700px){
+                    padding-top: 1rem;
+                    font-size: 1.3rem;
+                }
+                
+                @media(max-width: 400px){
+                    padding-top: 1rem;
+                    font-size: 1rem;
+                }
+            }
+
+            
+        }
+    }
+
+    .article-open {
+        height: 35rem;
+    }
+}
