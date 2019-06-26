@@ -5,7 +5,7 @@
     padding-right: 50px;
 
     a:hover {
-        background: lightblue;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         font-style: bold;
     }
     
@@ -42,6 +42,7 @@
             .nav-item {
                text-decoration: none;
                color: black;
+               background: none;
                font-size: 1.7rem;
                padding-top: 0.7rem;
 
@@ -101,10 +102,10 @@
             grid-column-end: -2;
             grid-row-start: 4;
             grid-row-end: 5;
-            text-align: center;
+            text-align: justify;
+            text-justify: inter-word;
 
             @media(max-width: 700px){font-size: 1.7rem}
-            @media(max-width: 400px){font-size: 1.4rem}
             
         }
     }
@@ -141,6 +142,7 @@
             height: auto;
             object-fit: contain;
             border-radius: 1rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         .bottom-button {
