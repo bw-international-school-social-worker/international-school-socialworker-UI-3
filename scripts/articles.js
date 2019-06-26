@@ -14,7 +14,6 @@ class Article {
     }
 
     openArticle() {
-        console.log('Fuck you motherfucker');
         this.domElement.classList.toggle('article-open');
     }
 
@@ -34,8 +33,6 @@ class Article {
 // .articles variable defined here
 
 let articles = document.querySelectorAll('.article');
-
-console.log(articles);
 
 articles.forEach(function(article){
     return new Article(article);
