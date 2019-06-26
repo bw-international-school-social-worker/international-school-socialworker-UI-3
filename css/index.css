@@ -166,7 +166,7 @@ a {
   padding-right: 50px;
 }
 .container a:hover {
-  background: lightblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-style: bold;
 }
 .container .navigation {
@@ -202,6 +202,7 @@ a {
 .container .navigation .nav-items .nav-item {
   text-decoration: none;
   color: black;
+  background: none;
   font-size: 1.7rem;
   padding-top: 0.7rem;
 }
@@ -259,16 +260,11 @@ a {
   grid-column-end: -2;
   grid-row-start: 4;
   grid-row-end: 5;
-  text-align: center;
+  text-align: justify;
 }
 @media (max-width: 700px) {
   .container .header .header-content {
     font-size: 1.7rem;
-  }
-}
-@media (max-width: 400px) {
-  .container .header .header-content {
-    font-size: 1.4rem;
   }
 }
 .container .bottom-content {
@@ -439,10 +435,10 @@ a {
   font-size: 1.9rem;
   color: lightgray;
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .middle-content .article .article-content p {
     padding-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 400px) {
