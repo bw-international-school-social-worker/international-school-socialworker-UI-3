@@ -261,6 +261,7 @@ a {
   grid-row-start: 4;
   grid-row-end: 5;
   text-align: justify;
+  text-justify: inter-word;
 }
 @media (max-width: 700px) {
   .container .header .header-content {
@@ -376,6 +377,7 @@ a {
   border: 1px solid lightgrey;
   border-radius: 0.5rem;
   background-color: #7A7A7A;
+  background-image: url(/img/art-background.png);
   position: relative;
   height: 7.5rem;
   overflow: hidden;
@@ -431,11 +433,11 @@ a {
 .middle-content .article .article-content p {
   grid-column-start: 2;
   grid-column-end: 3;
-  padding: 0 1rem;
+  padding: 0 1rem 1rem;
   font-size: 1.9rem;
   color: lightgray;
 }
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   .middle-content .article .article-content p {
     padding-top: 1rem;
     font-size: 1.6rem;
@@ -444,7 +446,7 @@ a {
 @media (max-width: 400px) {
   .middle-content .article .article-content p {
     padding-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .middle-content .article-open {
