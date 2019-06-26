@@ -403,7 +403,7 @@ a {
     margin-top: 1.1rem;
   }
 }
-.middle-content .article .clicker {
+.middle-content .article .openButton {
   text-align: center;
   font-size: 1.2rem;
   color: lightgray;
@@ -443,7 +443,7 @@ a {
     font-size: 1.6rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .middle-content .article .article-content p {
     padding-top: 1rem;
     font-size: 1.1rem;
