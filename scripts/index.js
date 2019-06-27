@@ -29,3 +29,16 @@ expander.forEach(button => {
         event.target.classList.toggle('buttonHover');
     })
 })
+
+let buttonPress = document.querySelectorAll('.bottom-button');
+
+buttonPress.forEach(button => {
+    button.addEventListener('mousedown', event => {
+        event.target.classList.toggle('buttonPressr');
+    })
+
+    button.addEventListener('mouseup', event => {
+        event.target.classList.toggle('buttonPressr');
+    })
+})
+
